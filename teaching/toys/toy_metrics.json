@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "scope": "Three teaching-only constructions; no CNN training and no claim of paper-level replication.",
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "matplotlib": "3.8.4"
+  },
+  "correlation": {
+    "description": "Binary identity descriptors; normalized raw cross-correlation, not softmax probability.",
+    "canvas_shape": [
+      65,
+      65
+    ],
+    "query_shape": [
+      19,
+      19
+    ],
+    "query_nonzero_pixels": 54,
+    "rotations_degrees": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "rotation_rule": "np.rot90; counter-clockwise when displayed with image rows increasing downward",
+    "target_angle_degrees": 90,
+    "target_center_row_col": [
+      32,
+      22
+    ],
+    "shift_row_col": [
+      0,
+      12
+    ],
+    "best_angle_row_col": [
+      90,
+      32,
+      22
+    ],
+    "shifted_best_angle_row_col": [
+      90,
+      32,
+      34
+    ],
+    "peak_score": 1.0,
+    "best_scores_by_rotation": [
+      0.5555555555555556,
+      1.0,
+      0.5555555555555556,
+      0.6111111111111112
+    ],
+    "largest_other_position_same_rotation": 0.8148148148148148,
+    "sidelobe_exclusion_radius_pixels": 3,
+    "sidelobe_max_same_rotation": 0.3888888888888889,
+    "translation_overlap_max_absolute_error": 0.0,
+    "translation_comparison_domain": "all four orientations, all rows, translated columns 12:65 vs original 0:53",
+    "interpretation_limit": "Exact integer translation for this unclipped identity-feature construction; no CNN or rotation-equivariance claim."
+  },
+  "multimodal": {
+    "description": "Same observation, four equally frequent point labels inside four isolated legal contact disks.",
+    "grid_shape": [
+      41,
+      41
+    ],
+    "seed": 7,
+    "steps": 5000,
+    "island_centers_xy": [
+      [
+        10,
+        10
+      ],
+      [
+        30,
+        10
+      ],
+      [
+        10,
+        30
+      ],
+      [
+        30,
+        30
+      ]
+    ],
+    "island_radius_pixels": 3,
+    "legal_grid_point_count": 116,
+    "labels_per_full_batch": 4,
+    "coordinate_normalization": "x_normalized = x_grid / 20 - 1 (same for y)",
+    "regression_parameters": 2,
+    "regression_initial_normalized_xy": [
+      -0.8,
+      0.6
+    ],
+    "regression_learning_rate": 0.05,
+    "regression_loss_definition": "mean over labels of squared Euclidean distance, summed over x,y",
+    "regression_analytic_mean_xy": [
+      20.0,
+      20.0
+    ],
+    "regression_final_xy": [
+      20.0,
+      20.0
+    ],
+    "regression_final_normalized_error_to_mean": 0.0,
+    "regression_final_is_legal": false,
+    "regression_loss_initial": 1.5000000000000002,
+    "regression_loss_final": 0.5,
+    "regression_loss_minimum": 0.5,
+    "classification_parameters": 1681,
+    "classification_logit_initialization": "independent Gaussian, mean=0, standard deviation=0.02",
+    "classification_learning_rate": 1.0,
+    "classification_loss_initial": 7.423083949298145,
+    "classification_loss_final": 1.3871000187118323,
+    "classification_loss_infimum": 1.3862943611198906,
+    "classification_excess_loss": 0.000805657591941733,
+    "four_label_probability_mass": 0.9991946668629967,
+    "legal_probability_mass": 0.9992483855416742,
+    "illegal_probability_mass": 0.0007516144583256343,
+    "probability_at_four_labels": [
+      0.24979866671574918,
+      0.24979866671574918,
+      0.24979866671574918,
+      0.24979866671574918
+    ],
+    "top_four_xy": [
+      [
+        30,
+        10
+      ],
+      [
+        30,
+        30
+      ],
+      [
+        10,
+        30
+      ],
+      [
+        10,
+        10
+      ]
+    ],
+    "interpretation_limit": "Direct fitted coordinates vs free grid logits; no CNN, no held-out inputs, unequal parameter counts, no generalization or ConvMLP ablation claim. Finite-logit softmax cannot reach exact zero mass elsewhere."
+  },
+  "gradient": {
+    "description": "Five mutually exclusive candidates in one global softmax; one positive label.",
+    "logits": [
+      2.0,
+      1.0,
+      0.0,
+      -0.5,
+      0.5
+    ],
+    "label_zero_based": 3,
+    "probabilities": [
+      0.5529658679613038,
+      0.20342477449248603,
+      0.07483579236072241,
+      0.045390202510666625,
+      0.12338336267482121
+    ],
+    "analytic_gradient_p_minus_y": [
+      0.5529658679613038,
+      0.20342477449248603,
+      0.07483579236072241,
+      -0.9546097974893334,
+      0.12338336267482121
+    ],
+    "finite_difference_gradient": [
+      0.5529658682057459,
+      0.2034247743587514,
+      0.0748357924518217,
+      -0.9546097976542711,
+      0.12338336263795213
+    ],
+    "finite_difference_epsilon": 1e-06,
+    "gradient_check_max_absolute_error": 2.4444213320151675e-10,
+    "gradient_sum": 1.3877787807814457e-17,
+    "one_step_learning_rate": 0.5,
+    "updated_probabilities": [
+      0.4851908140878396,
+      0.21257881025720018,
+      0.08339657842742053,
+      0.08463349222033636,
+      0.13420030500720323
+    ],
+    "loss_before": 3.09245900095362,
+    "loss_after": 2.4694252015841127,
+    "interpretation_limit": "A derivative identity for one softmax over all candidates; not five independent binary classifiers."
+  }
+}

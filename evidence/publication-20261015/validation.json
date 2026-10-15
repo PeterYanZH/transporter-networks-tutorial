@@ -1,0 +1,54 @@
+{
+  "checked_on": "2026-10-15",
+  "environment": "Reused previously verified Python 3.10 CPU environment; not a fresh dependency installation",
+  "source": "Pinned official commit fetched on a machine with working verified HTTPS, transferred as a complete Git bundle, and checked out through RAVENS_SOURCE_BUNDLE; no TLS verification bypass",
+  "assets": "Previously downloaded assets copied into isolated project and verified against current official ZIP indexes; no new full model/data download",
+  "offline_tests": "passed",
+  "environment_reset": "passed",
+  "pretrained_evaluation": {
+    "model": "block-insertion-transporter-10-0",
+    "checkpoint_step": 10000,
+    "episodes": 3,
+    "seeds": [
+      1,
+      3,
+      5
+    ],
+    "rewards": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean_reward": 1.0,
+    "successes": 3,
+    "device": "CPU",
+    "scope": "3-episode pipeline check, not full paper benchmark"
+  },
+  "synthetic_examples": "passed",
+  "channel_dot_product": "passed",
+  "teaching_diagnostics": "passed",
+  "plotting": "passed",
+  "model_parameter_updates": 0,
+  "smoke_training": "not rerun; historical evidence retained",
+  "source_file_sha256": {
+    "scripts/check_environment.py": "89926ad7e66dd163b429c930c2730b7ca98e3d07490b45d0baab4049f010dcac",
+    "scripts/eval_pretrained.sh": "3334d0ac31d5980a82124a7c1d37be53717667e4270bf88bdce4b7378a63f073",
+    "scripts/verify_smoke.py": "66c3482a0a8f3408810e9d72c8fe2ad0ca30af0a54a039c719b2e3b784d90f8a",
+    "scripts/verify_assets.py": "cd85c88e2bb919ebc31d87e0eef54c5127034ca45488b10ca3b7110607bf4bde",
+    "scripts/summarize_eval.py": "9618e2934023e3748e7ff5cfd5de01bb539204cb90d6264a1a1792d7f74b90ea",
+    "scripts/fetch_subset.py": "9bc14974ac2cca67de9fee4df82a20fc438058309315aa25e9f85386c11e5254",
+    "scripts/fetch_source.sh": "7f318c1198232bcdf85e4ffbd5b0fccac16f87e6bfdc44ca55892c8229e89056",
+    "scripts/setup.sh": "231d80994c0f132c93227fdd6cd96f4af6d46cfcdfea7551e13602b9515c30c4",
+    "scripts/fetch_assets.sh": "aa50cadb5ba1d59151b7730367713e3f244b778d3ef263ca76348584dbe04606",
+    "scripts/check_environment.sh": "94d151cf56ab52b51910c4bf6925f89a12e9379eba62a32c382d3c59cded5c31",
+    "scripts/smoke_train.sh": "e131b88fc2dad58c00dd5c314af72a9d9d3c3d8f3ed23dee94afbb65032e5418",
+    "teaching/scripts/plot_toys.py": "3b98f6347e9e1999658cd63d646ebbd38a1fae2f74348edf13afc3f7ada81d5b",
+    "teaching/scripts/figure_style.py": "2c2c82d314c29de888294ff352605473148ff970c1833614ef5c85efe22c0f63",
+    "teaching/scripts/plot_sliding_correlation.py": "d984a6bca21b8de64b27d6251613c0481d782b518a2f7b22e8e454496b0920b1",
+    "teaching/scripts/model_diagnostics.py": "bda6ab6b36c670e8660e6ae0742703d97e22808eae6655d4be5e45b287dec423",
+    "teaching/scripts/plot_rollouts.py": "bcb2b10139ed351cad716ac164bb87db7a39888a6ca845de6fcbaf560ec1bf02",
+    "teaching/scripts/check_numerics.py": "6826f174bcfda66e0a52b755f0c7789fe658fad9ea6f29ea8c104a9689926369",
+    "teaching/scripts/plot_diagnostics.py": "b21512f37fc927351161b188066c0b188a3bd7080cabf87b41904e1d243204ae",
+    "teaching/scripts/toy_experiments.py": "da1ac77417e3c11e4ee94c2da9b467cbd3688f7df3ddfc67a73820d2f7e2c244"
+  }
+}

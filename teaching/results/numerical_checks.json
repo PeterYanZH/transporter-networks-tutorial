@@ -1,0 +1,42 @@
+{
+  "synthetic_checks_passed": true,
+  "correlation_translation_error": 0.0,
+  "multimodal_legal_probability_mass": 0.9992483855416742,
+  "finite_difference_max_error": 2.4444213320151675e-10,
+  "three_channel_scores": [
+    [
+      6,
+      17,
+      13
+    ],
+    [
+      17,
+      9,
+      11
+    ],
+    [
+      11,
+      10,
+      7
+    ]
+  ],
+  "model_inferences": 0,
+  "robot_training_updates": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scope": "Public teaching script checks only; stored model observations and model figures were not regenerated.",
+  "source_array_comparison": {
+    "normal_arrays_rtol_atol": 1e-12,
+    "finite_difference_rtol_atol": 1e-08,
+    "equal_probability_modes_compared_as_sets": true
+  },
+  "help_checks_passed": [
+    "check_numerics.py",
+    "model_diagnostics.py",
+    "plot_diagnostics.py",
+    "plot_rollouts.py",
+    "plot_sliding_correlation.py",
+    "plot_toys.py",
+    "toy_experiments.py"
+  ]
+}

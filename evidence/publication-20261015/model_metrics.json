@@ -1,0 +1,177 @@
+{
+  "model": "block-insertion-transporter-10-0",
+  "checkpoint": 10000,
+  "devices": [
+    "CPU"
+  ],
+  "training_updates": 0,
+  "font_family": "Times New Roman",
+  "rollouts": [
+    {
+      "seed": 1,
+      "reward": 1.0,
+      "actions": [
+        {
+          "pick_rc": [
+            118,
+            49
+          ],
+          "place_rc_rotation": [
+            41,
+            21,
+            15
+          ],
+          "reward": 1.0,
+          "done": true
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "reward": 1.0,
+      "actions": [
+        {
+          "pick_rc": [
+            171,
+            126
+          ],
+          "place_rc_rotation": [
+            95,
+            30,
+            7
+          ],
+          "reward": 1.0,
+          "done": true
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "reward": 1.0,
+      "actions": [
+        {
+          "pick_rc": [
+            72,
+            128
+          ],
+          "place_rc_rotation": [
+            86,
+            91,
+            35
+          ],
+          "reward": 1.0,
+          "done": true
+        }
+      ]
+    }
+  ],
+  "conditioning": [
+    {
+      "pick_rc": [
+        118,
+        49
+      ],
+      "predicted_place_rc_bin": [
+        41,
+        21,
+        15
+      ],
+      "ideal_place_rc": [
+        42,
+        20
+      ],
+      "position_error_mm": 4.419417382415923
+    },
+    {
+      "pick_rc": [
+        136,
+        72
+      ],
+      "predicted_place_rc_bin": [
+        13,
+        11,
+        14
+      ],
+      "ideal_place_rc": [
+        15,
+        9
+      ],
+      "position_error_mm": 8.838834764831846
+    },
+    {
+      "pick_rc": [
+        140,
+        50
+      ],
+      "predicted_place_rc_bin": [
+        21,
+        30,
+        15
+      ],
+      "ideal_place_rc": [
+        22,
+        30
+      ],
+      "position_error_mm": 3.125
+    }
+  ],
+  "translation": [
+    {
+      "shift_rc": [
+        0,
+        0
+      ],
+      "pick_total_variation_interior": 0.0,
+      "place_peak_error_px": 0.0,
+      "place_bin": 15
+    },
+    {
+      "shift_rc": [
+        1,
+        0
+      ],
+      "pick_total_variation_interior": 0.06465911865234375,
+      "place_peak_error_px": 0.0,
+      "place_bin": 15
+    },
+    {
+      "shift_rc": [
+        0,
+        1
+      ],
+      "pick_total_variation_interior": 0.10435929894447327,
+      "place_peak_error_px": 0.0,
+      "place_bin": 15
+    },
+    {
+      "shift_rc": [
+        8,
+        0
+      ],
+      "pick_total_variation_interior": 4.290665245321179e-08,
+      "place_peak_error_px": 0.0,
+      "place_bin": 15
+    },
+    {
+      "shift_rc": [
+        0,
+        8
+      ],
+      "pick_total_variation_interior": 2.9704779080930166e-08,
+      "place_peak_error_px": 0.0,
+      "place_bin": 15
+    },
+    {
+      "shift_rc": [
+        8,
+        8
+      ],
+      "pick_total_variation_interior": 6.34923651432473e-08,
+      "place_peak_error_px": 0.0,
+      "place_bin": 15
+    }
+  ],
+  "query_gradient_fraction_outside_crop": 0.0,
+  "elapsed_seconds": 12.734357357025146,
+  "scope": "3 existing seeds re-run for visualization; conditional/translation/gradient diagnostics do not execute additional robot actions"
+}

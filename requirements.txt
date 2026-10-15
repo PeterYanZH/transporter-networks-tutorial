@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: Apache-2.0
+# Compatibility pins tested with Ubuntu 22.04 / Python 3.10 / CPU.
+# Upstream Ravens remains unmodified; avoid installing its historical pins.
+tensorflow-cpu==2.15.1
+keras==2.15.0
+tensorflow-addons==0.23.0
+tensorflow-hub==0.15.0
+numpy==1.26.4
+scipy==1.11.4
+pybullet==3.2.7
+opencv-python-headless==4.8.1.78
+matplotlib==3.8.4
+scikit-image==0.22.0
+transforms3d==0.4.2
+meshcat==0.3.2
+gym==0.23.1
+h5py==3.10.0
+setuptools==69.5.1
+wheel==0.48.0

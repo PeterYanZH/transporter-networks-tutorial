@@ -1,0 +1,86 @@
+{
+  "display_only": true,
+  "relative_maps_reference": "full-array maximum; clipped at 1e-4 for display",
+  "conditioning": {
+    "1": {
+      "source_roi_rc": [
+        82,
+        176,
+        2,
+        112
+      ],
+      "target_roi_rc": [
+        0,
+        66,
+        0,
+        66
+      ],
+      "max_angle_map_sum_fraction_in_target_roi": 0.9999999999999998
+    },
+    "2": {
+      "source_roi_rc": [
+        82,
+        176,
+        2,
+        112
+      ],
+      "target_roi_rc": [
+        0,
+        66,
+        0,
+        66
+      ],
+      "max_angle_map_sum_fraction_in_target_roi": 0.9999999999997916
+    },
+    "3": {
+      "source_roi_rc": [
+        82,
+        176,
+        2,
+        112
+      ],
+      "target_roi_rc": [
+        0,
+        66,
+        0,
+        66
+      ],
+      "max_angle_map_sum_fraction_in_target_roi": 0.9999999999999999
+    }
+  },
+  "sensitivity": {
+    "query_gradient": {
+      "display_roi_rc": [
+        0,
+        182,
+        0,
+        115
+      ],
+      "gradient_norm_mass_in_roi": 1.0
+    },
+    "key_gradient": {
+      "display_roi_rc": [
+        0,
+        182,
+        0,
+        115
+      ],
+      "gradient_norm_mass_in_roi": 1.0
+    }
+  },
+  "translation": {
+    "display_roi_rc": [
+      96,
+      164,
+      24,
+      92
+    ],
+    "metric_roi_rc": [
+      32,
+      288,
+      32,
+      128
+    ],
+    "difference_max": 0.0011277759913355112
+  }
+}

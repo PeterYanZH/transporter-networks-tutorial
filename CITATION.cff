@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "Please cite the original Transporter Networks paper for the method, and this repository when using its teaching material or reproduction utilities."
+title: "Transporter Networks 教学复现教程"
+type: software
+authors:
+  - name: "PeterYanZH"
+repository-code: "https://github.com/PeterYanZH/transporter-networks-tutorial"
+url: "https://github.com/PeterYanZH/transporter-networks-tutorial"
+date-released: "2026-10-15"
+license: Apache-2.0
+abstract: "Unofficial educational companion derived from Transporter Networks and Ravens. Provides a bounded CPU reproduction workflow, numerical examples, and pretrained-model diagnostics. See NOTICE.md for manuscript and third-party-material exclusions."
+references:
+  - type: conference-paper
+    title: "Transporter Networks: Rearranging the Visual World for Robotic Manipulation"
+    authors:
+      - family-names: Zeng
+        given-names: Andy
+      - family-names: Florence
+        given-names: Pete
+      - family-names: Tompson
+        given-names: Jonathan
+      - family-names: Welker
+        given-names: Stefan
+      - family-names: Chien
+        given-names: Jonathan
+      - family-names: Attarian
+        given-names: Maria
+      - family-names: Armstrong
+        given-names: Travis
+      - family-names: Krasin
+        given-names: Ivan
+      - family-names: Duong
+        given-names: Dan
+      - family-names: Sindhwani
+        given-names: Vikas
+      - family-names: Lee
+        given-names: Johnny
+    year: 2020
+    collection-title: "Conference on Robot Learning"
+    url: "https://arxiv.org/abs/2010.14406"

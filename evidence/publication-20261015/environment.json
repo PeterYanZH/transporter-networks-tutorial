@@ -1,0 +1,49 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "upstream_commit": "4752ffab487ebd387781ad7890aa540ae2780970",
+  "versions": {
+    "tensorflow-cpu": "2.15.1",
+    "keras": "2.15.0",
+    "tensorflow-addons": "0.23.0",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "pybullet": "3.2.7",
+    "gym": "0.23.1",
+    "opencv-python-headless": "4.8.1.78"
+  },
+  "visible_gpus": 0,
+  "observation_shapes": {
+    "color": [
+      [
+        480,
+        640,
+        3
+      ],
+      [
+        480,
+        640,
+        3
+      ],
+      [
+        480,
+        640,
+        3
+      ]
+    ],
+    "depth": [
+      [
+        480,
+        640
+      ],
+      [
+        480,
+        640
+      ],
+      [
+        480,
+        640
+      ]
+    ]
+  },
+  "headless_scene_reset": "passed"
+}

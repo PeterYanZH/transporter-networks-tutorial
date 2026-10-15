@@ -1,0 +1,63 @@
+{
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "versions": {
+      "tensorflow-cpu": "2.15.1",
+      "keras": "2.15.0",
+      "tensorflow-addons": "0.23.0",
+      "numpy": "1.26.4",
+      "pybullet": "3.2.7",
+      "gym": "0.23.1",
+      "opencv-python-headless": "4.8.1.78"
+    },
+    "visible_gpus": 0
+  },
+  "train_smoke": {
+    "optimizer_steps": 1,
+    "attention_loss_rounded": 10.9863,
+    "transport_loss_rounded": 269.8396,
+    "saved_weights_reload": "passed",
+    "device": "CPU",
+    "purpose": "pipeline smoke test; not a trained reproduction model"
+  },
+  "eval_pretrained": {
+    "model": "block-insertion-transporter-10-0",
+    "checkpoint_step": 10000,
+    "episodes": 3,
+    "seeds": [
+      1,
+      3,
+      5
+    ],
+    "rewards": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean_reward": 1.0,
+    "successes": 3,
+    "device": "CPU",
+    "scope": "3-episode pipeline check, not full paper benchmark"
+  },
+  "assets": {
+    "status": "complete",
+    "task": "block-insertion",
+    "model": "block-insertion-transporter-10-0",
+    "checkpoint_step": 10000,
+    "train_episodes": 10,
+    "test_episodes": 3,
+    "verified_files": 67,
+    "selected_compressed_bytes": 121634962,
+    "selected_uncompressed_bytes": 286601400,
+    "note": "Offline SHA256 checked after remote extraction/transfer. Compressed size is selected contents, not total network traffic including retries."
+  },
+  "source": {
+    "repository": "https://github.com/google-research/ravens.git",
+    "commit": "4752ffab487ebd387781ad7890aa540ae2780970",
+    "archive_url": "https://codeload.github.com/google-research/ravens/tar.gz/4752ffab487ebd387781ad7890aa540ae2780970"
+  },
+  "validation_complete": true,
+  "upstream_algorithm_modified": false,
+  "recorded_on": "2026-09-21",
+  "provenance_note": "Historical run before public packaging. Private machine paths omitted. The original moving-branch source archive digest is not presented as the digest of the pinned archive."
+}

@@ -1,0 +1,24 @@
+{
+  "upstream_repository": "https://github.com/google-research/ravens",
+  "upstream_commit": "4752ffab487ebd387781ad7890aa540ae2780970",
+  "model_prefix": "checkpoints/block-insertion-transporter-10-0",
+  "step": 10000,
+  "train_episodes": 10,
+  "test_episodes": 3,
+  "test_seeds": [1, 3, 5],
+  "expected_files": 67,
+  "selected_compressed_bytes": 121634962,
+  "selected_uncompressed_bytes": 286601400,
+  "archives": [
+    {
+      "url": "https://storage.googleapis.com/ravens-assets/checkpoints.zip",
+      "archive_bytes": 4355226887,
+      "etag": "\"a116c1154291270ae1e654e2acb55f4c\""
+    },
+    {
+      "url": "https://storage.googleapis.com/ravens-assets/block-insertion.zip",
+      "archive_bytes": 1133551716,
+      "etag": "\"9f85cf81d1a4ac05a960f01c1f138356\""
+    }
+  ]
+}

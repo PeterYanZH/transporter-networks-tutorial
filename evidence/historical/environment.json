@@ -1,0 +1,13 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "versions": {
+    "tensorflow-cpu": "2.15.1",
+    "keras": "2.15.0",
+    "tensorflow-addons": "0.23.0",
+    "numpy": "1.26.4",
+    "pybullet": "3.2.7",
+    "gym": "0.23.1",
+    "opencv-python-headless": "4.8.1.78"
+  },
+  "visible_gpus": 0
+}

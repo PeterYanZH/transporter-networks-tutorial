@@ -1,0 +1,144 @@
+{
+  "source": "results/rollouts_arrays.npz",
+  "model_inferences": 0,
+  "pixel_size_mm": 3.125,
+  "display": "Neutral RGB tones remapped to light gray with darker fixture edges; red object retained as muted red. Heat layers use opacity over the scene. Photometric display changes are not model inputs.",
+  "colorbar": {
+    "quantity": "log10(P / global maximum P of each original full map)",
+    "limits": [
+      -4,
+      0
+    ],
+    "note": "Place map is max over the 36 rotation bins, not a marginal sum. No local ROI renormalization."
+  },
+  "cropping": "Main figure has separately chosen source and target ROIs. Source uses the initial red-object bounds; target uses placed red-object bounds plus predicted placement, with at least 10 pixels padding where workspace boundaries permit and a minimum side of 64 pixels. After-action view uses the identical target ROI. Overview contains both ROIs; amber dashed box denotes pick view (b), teal denotes target views (c,d). All scale bars are outside images. The full-workspace companion preserves all pixels and candidate responses.",
+  "full_workspace_companion": "model_rollouts_full.pdf",
+  "records": [
+    {
+      "seed": 1,
+      "pick_rc": [
+        118,
+        49
+      ],
+      "place_rc_rotation_bin": [
+        41,
+        21,
+        15
+      ],
+      "overview_roi": [
+        0,
+        165,
+        0,
+        96
+      ],
+      "pick_view": {
+        "roi_row_start_stop_col_start_stop": [
+          97,
+          161,
+          28,
+          92
+        ],
+        "retained_sum_fraction": 0.9999822420154668,
+        "largest_outside_score_relative_to_global_max": 1.417655093549697e-05,
+        "outside_pixels_above_1_percent_of_global_max": 0,
+        "interpretation": "Fraction of full pick probability mass retained by the local source view."
+      },
+      "place_view": {
+        "roi_row_start_stop_col_start_stop": [
+          0,
+          64,
+          0,
+          64
+        ],
+        "retained_sum_fraction": 0.9999999999999997,
+        "largest_outside_score_relative_to_global_max": 2.5401020145336422e-17,
+        "outside_pixels_above_1_percent_of_global_max": 0,
+        "interpretation": "Fraction of summed max-over-angle scores retained; this is not marginalized placement probability mass."
+      }
+    },
+    {
+      "seed": 3,
+      "pick_rc": [
+        171,
+        126
+      ],
+      "place_rc_rotation_bin": [
+        95,
+        30,
+        7
+      ],
+      "overview_roi": [
+        51,
+        202,
+        0,
+        160
+      ],
+      "pick_view": {
+        "roi_row_start_stop_col_start_stop": [
+          134,
+          198,
+          96,
+          160
+        ],
+        "retained_sum_fraction": 0.9999815822321136,
+        "largest_outside_score_relative_to_global_max": 8.776837047296333e-06,
+        "outside_pixels_above_1_percent_of_global_max": 0,
+        "interpretation": "Fraction of full pick probability mass retained by the local source view."
+      },
+      "place_view": {
+        "roi_row_start_stop_col_start_stop": [
+          55,
+          119,
+          0,
+          64
+        ],
+        "retained_sum_fraction": 0.9999999999999999,
+        "largest_outside_score_relative_to_global_max": 2.5461653706754173e-17,
+        "outside_pixels_above_1_percent_of_global_max": 0,
+        "interpretation": "Fraction of summed max-over-angle scores retained; this is not marginalized placement probability mass."
+      }
+    },
+    {
+      "seed": 5,
+      "pick_rc": [
+        72,
+        128
+      ],
+      "place_rc_rotation_bin": [
+        86,
+        91,
+        35
+      ],
+      "overview_roi": [
+        46,
+        132,
+        49,
+        158
+      ],
+      "pick_view": {
+        "roi_row_start_stop_col_start_stop": [
+          50,
+          114,
+          90,
+          154
+        ],
+        "retained_sum_fraction": 0.9999889922337792,
+        "largest_outside_score_relative_to_global_max": 3.850395429136301e-06,
+        "outside_pixels_above_1_percent_of_global_max": 0,
+        "interpretation": "Fraction of full pick probability mass retained by the local source view."
+      },
+      "place_view": {
+        "roi_row_start_stop_col_start_stop": [
+          64,
+          128,
+          53,
+          117
+        ],
+        "retained_sum_fraction": 0.999999999999999,
+        "largest_outside_score_relative_to_global_max": 1.1391419373083169e-16,
+        "outside_pixels_above_1_percent_of_global_max": 0,
+        "interpretation": "Fraction of summed max-over-angle scores retained; this is not marginalized placement probability mass."
+      }
+    }
+  ]
+}

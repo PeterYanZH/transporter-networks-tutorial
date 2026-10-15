@@ -1,0 +1,901 @@
+{
+  "kind": "Three-channel illustrative CNN-output features; no CNN execution, inference or training",
+  "tensor_layout": "height, width, channel",
+  "query_hwc": [
+    [
+      [
+        1,
+        2,
+        -1
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ]
+  ],
+  "feature_map_hwc": [
+    [
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        2,
+        -1
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ]
+    ]
+  ],
+  "scores": [
+    [
+      6,
+      17,
+      13
+    ],
+    [
+      17,
+      9,
+      11
+    ],
+    [
+      11,
+      10,
+      7
+    ]
+  ],
+  "stride": 1,
+  "padding": 0,
+  "channels": 3,
+  "orientations": 1,
+  "kernel_flipped": false,
+  "softmax_applied": false,
+  "highlighted_channel_dot": {
+    "query_vector": [
+      1,
+      2,
+      -1
+    ],
+    "key_vector": [
+      3,
+      0,
+      2
+    ],
+    "channel_products": [
+      3,
+      0,
+      -2
+    ],
+    "channel_sum": 1
+  },
+  "index_convention": "zero-based (row, column); window upper bounds are exclusive",
+  "windows": [
+    {
+      "output_rc": [
+        0,
+        0
+      ],
+      "input_window_rows": [
+        0,
+        2
+      ],
+      "input_window_columns": [
+        0,
+        2
+      ],
+      "window_hwc": [
+        [
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            2,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            -1
+          ],
+          [
+            1,
+            3,
+            2
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            3,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            3,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          4
+        ]
+      ],
+      "spatial_sum_score": 6
+    },
+    {
+      "output_rc": [
+        0,
+        1
+      ],
+      "input_window_rows": [
+        0,
+        2
+      ],
+      "input_window_columns": [
+        1,
+        3
+      ],
+      "window_hwc": [
+        [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            2,
+            4,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          6,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "spatial_sum_score": 17
+    },
+    {
+      "output_rc": [
+        0,
+        2
+      ],
+      "input_window_rows": [
+        0,
+        2
+      ],
+      "input_window_columns": [
+        2,
+        4
+      ],
+      "window_hwc": [
+        [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            0,
+            4,
+            -1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "spatial_sum_score": 13
+    },
+    {
+      "output_rc": [
+        1,
+        0
+      ],
+      "input_window_rows": [
+        1,
+        3
+      ],
+      "input_window_columns": [
+        0,
+        2
+      ],
+      "window_hwc": [
+        [
+          [
+            0,
+            2,
+            -1
+          ],
+          [
+            1,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            0,
+            4,
+            1
+          ],
+          [
+            0,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "spatial_sum_score": 17
+    },
+    {
+      "output_rc": [
+        1,
+        1
+      ],
+      "input_window_rows": [
+        1,
+        3
+      ],
+      "input_window_columns": [
+        1,
+        3
+      ],
+      "window_hwc": [
+        [
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            1,
+            6,
+            -2
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "spatial_sum_score": 9
+    },
+    {
+      "output_rc": [
+        1,
+        2
+      ],
+      "input_window_rows": [
+        1,
+        3
+      ],
+      "input_window_columns": [
+        2,
+        4
+      ],
+      "window_hwc": [
+        [
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "spatial_sum_score": 11
+    },
+    {
+      "output_rc": [
+        2,
+        0
+      ],
+      "input_window_rows": [
+        2,
+        4
+      ],
+      "input_window_columns": [
+        0,
+        2
+      ],
+      "window_hwc": [
+        [
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "spatial_sum_score": 11
+    },
+    {
+      "output_rc": [
+        2,
+        1
+      ],
+      "input_window_rows": [
+        2,
+        4
+      ],
+      "input_window_columns": [
+        1,
+        3
+      ],
+      "window_hwc": [
+        [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            1,
+            4,
+            -1
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          4,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "spatial_sum_score": 10
+    },
+    {
+      "output_rc": [
+        2,
+        2
+      ],
+      "input_window_rows": [
+        2,
+        4
+      ],
+      "input_window_columns": [
+        2,
+        4
+      ],
+      "window_hwc": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            0,
+            2
+          ]
+        ]
+      ],
+      "channel_products_hwc": [
+        [
+          [
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "per_position_channel_dot_products": [
+        [
+          -2,
+          1
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "spatial_sum_score": 7
+    }
+  ],
+  "exact_integer_result_verified": true,
+  "independent_einsum_check_passed": true,
+  "maximum_score": 17,
+  "maximum_locations_rc": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "figure_size_inches": [
+    6.456692913385826,
+    5.275590551181103
+  ],
+  "figure_size_cm": [
+    16.4,
+    13.4
+  ],
+  "png_dpi": 300,
+  "font_family": "Times New Roman",
+  "smallest_font_points": 9,
+  "text_overlap_check": {
+    "renderer": "Matplotlib Agg",
+    "collisions": []
+  },
+  "interpretation": "First sum the three feature-channel products at each corresponding spatial position; then sum the four resulting spatial contributions. Slide the unchanged query to obtain one scalar per output location. These are signed, unnormalized correlation scores, not probabilities.",
+  "pdf_verification": {
+    "fonts": [
+      {
+        "base_font": "/BYJABP+TimesNewRomanPSMT",
+        "embedded": true
+      }
+    ],
+    "image_xobject_count": 0,
+    "vector_matrix_and_text_confirmed": true,
+    "page_dimensions_points": [
+      464.8818897638,
+      379.842519685
+    ],
+    "visual_qa": "Inspected 300 dpi PNG; all vectors, signed terms, sum labels and tensor dimensions visible without text overlap."
+  }
+}

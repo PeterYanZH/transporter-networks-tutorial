@@ -1,0 +1,8 @@
+{
+  "optimizer_steps": 1,
+  "attention_loss_rounded": 10.9863,
+  "transport_loss_rounded": 269.8396,
+  "saved_weights_reload": "passed",
+  "device": "CPU",
+  "purpose": "pipeline smoke test; not a trained reproduction model"
+}
